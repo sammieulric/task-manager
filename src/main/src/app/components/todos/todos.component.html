@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 col-sm-12 mb-2">
+      <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+      <!-- <button (click)='postSync()'>Recommend a task</button> -->
+      <app-todo-item *ngFor='let todo of todos' [todo] = 'todo'
+  (deleteTodo) = "deleteTodo($event)">
+  </app-todo-item>
+      </div>
+      </div>
+</div>
+

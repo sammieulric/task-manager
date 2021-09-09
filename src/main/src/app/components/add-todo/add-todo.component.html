@@ -1,0 +1,5 @@
+<form #addTask="ngForm" class="form mb-3 mt-2" (ngSubmit)='addTask.valid && onSubmit()'>
+  <input type="text" name='title' [(ngModel)]='title'
+  placeholder="Add Task..." required>
+  <input type='submit' value='Submit' class='btn btn-primary' [disabled] = "addTask.invalid">
+</form>
